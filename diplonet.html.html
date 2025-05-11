@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DiploNest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* New Navbar Styling */
+    .navbar {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #f39200;
+      display: flex;
+      font-family: sans-serif;
+    }
+
+    .navbar > li {
+      position: relative;
+      padding: 15px 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .dropdown-menu,
+    .sub-dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: rgb(216, 159, 73);
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      padding: 8px 10px;
+      position: relative;
+      color: white;
+    }
+
+    .sub-dropdown {
+      position: relative;
+    }
+
+    .sub-dropdown-menu {
+      top: 0;
+      left: 100%;
+    }
+
+    .sub-dropdown:hover .sub-dropdown-menu {
+      display: block;
+    }
+
+    .navbar > li:hover,
+    .dropdown-menu li:hover,
+    .sub-dropdown-menu li:hover {
+      background-color:  rgba(92, 225, 169, 0.8);
+    }
+
+       h2 {
+            color: coral;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+      h3 {
+           color: coral;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+    /* Existing Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('computer_engineering_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: black;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
+    }
+
+    .marquee-container {
+      background-color: antiquewhite;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .about {
+      padding: 50px;
+      background-image: linear-gradient(18deg,  rgb(216, 159, 73),  rgba(92, 225, 169, 0.8));
+    }
+
+   
+  </style>
+</head>
+<body>
+ 
+
+
+
+
+  <!-- Marquee for Website Name -->
+  <div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="15"><div id="myDIV">Welcome to DiploNest - Helping Students Like You!👍</div></marquee>
+  </div>
+
+  <!-- New Navigation Bar -->
+  <ul class="navbar">
+    <li class="dropdown">Semester 1
+      <ul class="dropdown-menu">
+        <li class="sub-dropdown">CPF
+          <ul class="sub-dropdown-menu">
+            <li><a href="Sem 1/CPF/CPF lab manual soln (1).pdf">Lab Manual</a></li>
+                 </ul>
+        </li>
+        <li class="sub-dropdown">BOE
+          <ul class="sub-dropdown-menu">
+            <li><a href="Sem 1/BOE/BOE Assignment soln (1).pdf">Assignment solution</a></li>
+            <li><a href="Sem 1/BOE/BOE Lab manual soln (1).pdf">Lab Manual</a></li>
+          </ul>
+        </li>
+        <li class="sub-dropdown">Mathematics
+          <ul class="sub-dropdown-menu">
+            <li><a href="Sem 1/Maths/Maths Assignment soln (1).pdf">Assignments 1,2,4,5 solutions</a></li>
+            <li><a href="Sem 1/Maths/Maths Assignment 3 soln (1).pdf">Assignment 3 solutions</a></li>
+        </ul>
+        </li>
+        <li class="sub-dropdown">CBSWPD
+            <ul class="sub-dropdown-menu">
+              <li><a href="Sem 1/CBSWPD/CBSPD Lab manual soln (1).pdf">Lab Manual</a></li>
+                   </ul>
+          </li>
+          <li class="sub-dropdown">Physics
+            <ul class="sub-dropdown-menu">
+              <li><a href=<a></a></li>
+              <li><a href="Sem 1/Physics/Physics Assignment soln (1).pdf">Assignment solutions</a></li>
+              <li><a href="Sem 1/Physics/Physics lab manual soln (1).pdf">Lab Manual solutions</a></li>
+          </ul>
+          </li>
+      </ul>
+    </li>
+
+    <li class="dropdown">Semester 2
+      <ul class="dropdown-menu">
+        <li class="sub-dropdown">Chemistry
+          <ul class="sub-dropdown-menu">
+            <li><a href="#">Assignment</a></li>
+          </ul>
+        </li>
+        <li class="sub-dropdown">Python
+          <ul class="sub-dropdown-menu">
+            <li><a href="Sem 2/SL/Python assignment solution (1).pdf">Assignment solutions</a></li>
+            <li><a href="Sem 2/SL/Python lab manual soln (1).pdf">Lab Manual solutions</a></li>
+          </ul>
+        </li>
+        <li class="sub-dropdown">EWP
+          <ul class="sub-dropdown-menu">
+            <li><a href="Sem 2/EWP/EWP Lab manual soln  (1).pdf">Lab Manual Solutions</a></li>
+          </ul>
+        </li>
+        <li class="sub-dropdown">IC
+          <ul class="sub-dropdown-menu">
+            <li><a href="Sem 2/IC/IC Assignment (1).pdf">Assignment solutions</a></li>
+          </ul>
+        </li>
+        <li class="sub-dropdown">Maths
+          <ul class="sub-dropdown-menu">
+            <li><a href="#">Assignment solutions</a></li>
+            <li><a href="#">Tutorial solution</a></li>
+          </ul>
+        </li>
+        <li class="sub-dropdown">Enivironmental Sustainability
+          <ul class="sub-dropdown-menu">
+            <li><a href="Sem 2/ES/ES Assignment solution.pdf">Assignment solutions</a></li>
+          </ul>
+        </li>
+        <li class="sub-dropdown">IPDC
+          <ul class="sub-dropdown-menu">
+            <li><a href="Sem 2/IPDC/IPDC Question bank with ans (1).pdf">Question bank with answers</a></li>
+            <li><a href="Sem 2/IPDC/IPDC Workbook soln (1).pdf">Workbook solutions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  
+  
+  <!-- About Section -->
+  <div class="about">
+    <h2>About DiploNest</h2>
+    <p>Welcome to <strong>DiploNest</strong>, a platform built by students of <strong><bold>R.C.Technical Institute</bold></strong>, for students.If you’ve ever struggled to find the right solutions when submission deadlines are looming, I understand—because I’ve been there.</p>
+    <p>As a <strong>computer engineering student</strong>, I faced countless nights searching for answers, trying to get my assignments and projects done on time. I know the frustration of looking everywhere and finding nothing useful. That’s when I had an idea—why not create a website where students like me can find solutions <strong>all in one place</strong>?</p>
+    <p>This website is designed to provide solutions for <strong>each and every subject</strong> across different diploma semesters.</p>
+    <ul>
+      <li><strong>Semester 1 & 2:</strong> Common subjects shared by all engineering branches.</li>
+      <li><strong>From Semester 3 onward:</strong> Focused on Computer Engineering with subject-specific solutions.</li>
+    </ul>
+    <h2>How This Website Helps You </h2> 
+    <ul>
+      <li>✔ <strong>Find solutions easily</strong> – No more wasting hours searching through scattered resources.</li>
+      <li>✔ <strong>Access study materials anytime</strong> – Available 24/7 to help with assignments, projects, and exam prep.</li>
+      <li>✔ <strong>Stay ahead of deadlines</strong> – Get ready for submissions without last-minute stress.</li>
+      <li>✔ <strong>Support from a fellow student</strong> – Built by someone who understands the struggle, ensuring every topic is covered!</li>
+    </ul>
+    <p>I created this website to <strong>help others like me</strong>, to make sure no student has to go through the same frustration alone. Let’s study smarter, not harder!</p>
+  </div>
+
+</body>
+</html>
